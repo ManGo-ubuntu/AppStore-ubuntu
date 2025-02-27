@@ -1,0 +1,25 @@
+appId: com.ubuntu.appstore
+productName: Ubuntu App Store
+copyright: Copyright © 2024
+
+directories:
+  output: dist
+  buildResources: build
+
+files:
+  - build/**/*
+  - node_modules/**/*
+
+linux:
+  target:
+    - deb
+    - AppImage
+  category: System
+  icon: build/icon.png
+
+deb:
+  depends:
+    - flatpak
+    - snapd
+
+publish: null 
