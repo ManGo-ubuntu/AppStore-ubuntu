@@ -57,7 +57,3 @@ npm run dist
 ```bash
 sudo dpkg -i dist/ubuntu-app-store_*.deb
 ```
-
-## Лицензия
-
-MIT 
